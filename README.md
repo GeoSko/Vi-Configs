@@ -1,6 +1,7 @@
 # Vi-Configs
 
 Just my vi configuration
+
 Monokai colorscheme from: https://github.com/sickill/vim-monokai
 
 ## Installation
