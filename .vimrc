@@ -9,6 +9,5 @@ inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>O<Tab>
 inoremap [ []<Esc>i
-#inoremap < <><Esc>i
 inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
