@@ -6,8 +6,6 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set title
-#set clipboard^=unnamed
-#se mouse+=a
 inoremap ( ()<Esc>i
 inoremap { {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>O<Tab>
