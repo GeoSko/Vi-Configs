@@ -15,3 +15,5 @@ inoremap " ""<Esc>i
 inoremap '' '
 inoremap "" "
 inoremap () ()
+nmap oo o<Esc>k
+nmap OO O<Esc>j
