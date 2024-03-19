@@ -1,3 +1,15 @@
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'Raimondi/delimitMate'
+Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-surround'
+call plug#end()
+
 syntax on
 colorscheme monokai
 set number
@@ -6,14 +18,7 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set title
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>O<Tab>
-inoremap [ []<Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
-inoremap '' '
-inoremap "" "
-inoremap () ()
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 nmap oo o<Esc>k
 nmap OO O<Esc>j
+
